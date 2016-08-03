@@ -8,6 +8,7 @@
 
 import Foundation
 
+// Contains a NSURL extension for parsing query items.
 extension NSURL {
     
     func getQueryItemValue(named name: String) -> String? {

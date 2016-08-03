@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C5F956B1D512376004257D5 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F956A1D512376004257D5 /* Secrets.swift */; };
+		2C5F956D1D512477004257D5 /* Lab Objectives.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F956C1D512477004257D5 /* Lab Objectives.swift */; };
 		5DFFDD5F1D4EDE6C00CD3CB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFFDD5E1D4EDE6C00CD3CB9 /* AppDelegate.swift */; };
 		5DFFDD661D4EDE6C00CD3CB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DFFDD651D4EDE6C00CD3CB9 /* Assets.xcassets */; };
 		5DFFDD691D4EDE6C00CD3CB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DFFDD671D4EDE6C00CD3CB9 /* LaunchScreen.storyboard */; };
 		5DFFDD761D4EE06300CD3CB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DFFDD751D4EE06300CD3CB9 /* Main.storyboard */; };
-		5DFFDD781D4EE3A400CD3CB9 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFFDD771D4EE3A400CD3CB9 /* Secrets.swift */; };
 		5DFFDD7A1D4EE42200CD3CB9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFFDD791D4EE42200CD3CB9 /* Constants.swift */; };
 		5DFFDD7C1D4EE4F300CD3CB9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFFDD7B1D4EE4F300CD3CB9 /* Extensions.swift */; };
 		5DFFDD7E1D4EE7C700CD3CB9 /* GitHubAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFFDD7D1D4EE7C700CD3CB9 /* GitHubAPIClient.swift */; };
@@ -26,6 +27,8 @@
 
 /* Begin PBXFileReference section */
 		1149C8EA448CF5F7543ABA9C /* Pods-GitHubOAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubOAuth.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubOAuth/Pods-GitHubOAuth.release.xcconfig"; sourceTree = "<group>"; };
+		2C5F956A1D512376004257D5 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		2C5F956C1D512477004257D5 /* Lab Objectives.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Lab Objectives.swift"; sourceTree = "<group>"; };
 		47FC202E21397FD9B13D844C /* Pods_GitHubOAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubOAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DFFDD5B1D4EDE6C00CD3CB9 /* GitHubOAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubOAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DFFDD5E1D4EDE6C00CD3CB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +36,6 @@
 		5DFFDD681D4EDE6C00CD3CB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DFFDD6A1D4EDE6C00CD3CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DFFDD751D4EE06300CD3CB9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		5DFFDD771D4EE3A400CD3CB9 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		5DFFDD791D4EE42200CD3CB9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5DFFDD7B1D4EE4F300CD3CB9 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		5DFFDD7D1D4EE7C700CD3CB9 /* GitHubAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPIClient.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		5DFFDD5D1D4EDE6C00CD3CB9 /* GitHubOAuth */ = {
 			isa = PBXGroup;
 			children = (
+				2C5F956C1D512477004257D5 /* Lab Objectives.swift */,
 				5DFFDD701D4EDE8F00CD3CB9 /* Model */,
 				5DFFDD711D4EDE9500CD3CB9 /* View */,
 				5DFFDD721D4EDEA400CD3CB9 /* Controllers */,
@@ -129,7 +132,7 @@
 				5DFFDD7D1D4EE7C700CD3CB9 /* GitHubAPIClient.swift */,
 				5DFFDD7B1D4EE4F300CD3CB9 /* Extensions.swift */,
 				5DFFDD791D4EE42200CD3CB9 /* Constants.swift */,
-				5DFFDD771D4EE3A400CD3CB9 /* Secrets.swift */,
+				2C5F956A1D512376004257D5 /* Secrets.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -281,13 +284,14 @@
 				5DFFDD7E1D4EE7C700CD3CB9 /* GitHubAPIClient.swift in Sources */,
 				5DFFDD5F1D4EDE6C00CD3CB9 /* AppDelegate.swift in Sources */,
 				5DFFDD841D4EEEF200CD3CB9 /* AppController.swift in Sources */,
-				5DFFDD781D4EE3A400CD3CB9 /* Secrets.swift in Sources */,
+				2C5F956D1D512477004257D5 /* Lab Objectives.swift in Sources */,
 				5DFFDD7A1D4EE42200CD3CB9 /* Constants.swift in Sources */,
 				5DFFDD7C1D4EE4F300CD3CB9 /* Extensions.swift in Sources */,
 				5DFFDD891D4EEF0B00CD3CB9 /* Repo.swift in Sources */,
 				5DFFDD8A1D4EEF0B00CD3CB9 /* ReposDataStore.swift in Sources */,
 				5DFFDD801D4EEED500CD3CB9 /* ReposTableViewController.swift in Sources */,
 				5DFFDD861D4EEF0300CD3CB9 /* ReposTableViewCell.swift in Sources */,
+				2C5F956B1D512376004257D5 /* Secrets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

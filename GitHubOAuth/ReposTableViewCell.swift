@@ -8,6 +8,7 @@
 
 import UIKit
 
+// Class is the reusable cell for the ReposTableViewController
 class ReposTableViewCell: UITableViewCell {
     
     let store = ReposDataStore.sharedInstance

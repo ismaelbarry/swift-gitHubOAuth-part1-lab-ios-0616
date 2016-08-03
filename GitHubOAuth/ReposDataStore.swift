@@ -9,6 +9,7 @@
 import UIKit
 import SwiftyJSON
 
+// Class stores repo objects and routes starring requests.
 class ReposDataStore {
     
     static let sharedInstance = ReposDataStore()

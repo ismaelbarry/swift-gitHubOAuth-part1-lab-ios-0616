@@ -8,6 +8,7 @@
 
 import UIKit
 
+// Contains structs for notifications.
 struct Notification {
     static let closeSafariVC = "Close safari view controller"
     static let closeLoginVC = "Close login view controller"
@@ -15,6 +16,7 @@ struct Notification {
     
 }
 
+// Contains structs for storyboard IDs.
 struct StoryboardID {
     static let loginVC = "loginVC"
     static let reposTVC = "reposTVC"

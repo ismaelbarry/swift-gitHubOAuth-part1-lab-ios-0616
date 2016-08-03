@@ -8,6 +8,7 @@
 
 import UIKit
 
+// Class handles which view controller is displayed.
 class AppController: UIViewController {
     
     @IBOutlet weak var containerView: UIView!

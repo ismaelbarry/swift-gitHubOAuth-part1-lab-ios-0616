@@ -8,6 +8,7 @@
 
 import UIKit
 
+// Class displays repositories and allows starring.
 class ReposTableViewController: UITableViewController {
 
     let store = ReposDataStore.sharedInstance
