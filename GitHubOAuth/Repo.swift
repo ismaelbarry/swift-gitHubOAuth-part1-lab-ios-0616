@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-// Class is used to create repo objects.
+// Class is used to create repository objects.
 class Repo {
     
     var id: String

@@ -51,7 +51,7 @@ class LoginViewController: UIViewController {
         
         guard let unwrappedurl = url else { fatalError("Invalid URL.") }
         
-        // Initialize a SFSafariViewController using the url
+        // Initialize a SFSafariViewController using the url.
         self.safariViewController = SFSafariViewController(URL: unwrappedurl)
         
         self.presentViewController(self.safariViewController, animated: true, completion: nil)

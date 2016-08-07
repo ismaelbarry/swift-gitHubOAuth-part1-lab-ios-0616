@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Get the value for the key "UIApplicationOpenURLOptionsSourceApplicationKey" from the options dictionary.
         if let value = options["UIApplicationOpenURLOptionsSourceApplicationKey"] {
             
+            // Convert value to a string because the key is of type AnyObject.
             // If the value equals "com.apple.SafariViewService", return true.
             if String(value) == "com.apple.SafariViewService" {
             

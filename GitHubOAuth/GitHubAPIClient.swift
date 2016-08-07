@@ -31,7 +31,6 @@ class GitHubAPIClient {
             return nil
         }
     }
-
 }
 
 // MARK: Repositories
@@ -39,22 +38,21 @@ extension GitHubAPIClient {
     
     class func getRepositoriesWithCompletion(completionHandler: (JSON?) -> Void) {
         
-        Alamofire.request(.GET, URLRouter.repo)
-            .validate()
-            .responseJSON(completionHandler: { response in
-                switch response.result {
-                case .Success:
-                    if let data = response.data {
-                        completionHandler(JSON(data: data))
-                    }
-                case .Failure(let error):
-                    print("ERROR: \(error.localizedDescription)")
-                    completionHandler(nil)
+        Alamofire.request(.GET, URLRouter.repo).validate().responseJSON(completionHandler: { response in
+            
+            switch response.result {
+            
+            case .Success:
+                if let data = response.data {
+                    completionHandler(JSON(data: data))
                 }
-            })
-        
+            
+            case .Failure(let error):
+                print("ERROR: \(error.localizedDescription)")
+                completionHandler(nil)
+            }
+        })
     }
-    
 }
 
 
@@ -81,24 +79,22 @@ extension GitHubAPIClient {
             return
         }
         
-        Alamofire.request(.GET, urlString)
-            .validate(statusCode: 204...404)
-            .responseString(completionHandler: { response in
-                switch response.result {
-                case .Success:
-                    if response.response?.statusCode == 204 {
-                        completionHandler(true)
-                    } else if response.response?.statusCode == 404 {
-                        completionHandler(false)
-                    }
-                case .Failure(let error):
-                    print("ERROR: \(error.localizedDescription)")
-                    completionHandler(nil)
+        Alamofire.request(.GET, urlString).validate(statusCode: 204...404).responseString(completionHandler: { response in
+            
+            switch response.result {
+            
+            case .Success:
+                if response.response?.statusCode == 204 {
+                    completionHandler(true)
+                } else if response.response?.statusCode == 404 {
+                    completionHandler(false)
                 }
-                
-                
-            })
-        
+
+            case .Failure(let error):
+                print("ERROR: \(error.localizedDescription)")
+                completionHandler(nil)
+            }
+        })
     }
     
     class func starRepository(fullName: String, completionHandler: (Bool) -> ()) {
@@ -109,18 +105,18 @@ extension GitHubAPIClient {
             return
         }
         
-        Alamofire.request(.PUT, urlString)
-            .validate(statusCode: 204...204)
-            .responseString(completionHandler: { response in
-                switch response.result {
-                case .Success:
-                    completionHandler(true)
-                case .Failure(let error):
-                    print("ERROR: \(error.localizedDescription)")
-                    completionHandler(false)
-                }
-            })
-        
+        Alamofire.request(.PUT, urlString).validate(statusCode: 204...204).responseString(completionHandler: { response in
+            
+            switch response.result {
+            
+            case .Success:
+                completionHandler(true)
+            
+            case .Failure(let error):
+                print("ERROR: \(error.localizedDescription)")
+                completionHandler(false)
+            }
+        })
     }
     
     class func unStarRepository(fullName: String, completionHandler: (Bool) -> ()) {
@@ -131,19 +127,17 @@ extension GitHubAPIClient {
             return
         }
         
-        Alamofire.request(.DELETE, urlString)
-            .validate(statusCode: 204...204)
-            .responseString(completionHandler: { response in
-                switch response.result {
-                case .Success:
-                    completionHandler(true)
-                case .Failure(let error):
-                    print("ERROR: \(error.localizedDescription)")
-                    completionHandler(false)
-                }
-            })
-        
+        Alamofire.request(.DELETE, urlString).validate(statusCode: 204...204).responseString(completionHandler: { response in
+            
+            switch response.result {
+            
+            case .Success:
+                completionHandler(true)
+            
+            case .Failure(let error):
+                print("ERROR: \(error.localizedDescription)")
+                completionHandler(false)
+            }
+        })
     }
-    
 }
-
